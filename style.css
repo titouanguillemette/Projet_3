@@ -7,6 +7,7 @@ header {
 	display: flex;
 	justify-content: center;
 	font-family: arial;
+	margin-bottom: 10px;
 }
 
 
@@ -30,6 +31,10 @@ footer {
 	color: #FFD700;
 	align-items: center;
 	height: 80px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+
 }
 
 #mentions {
@@ -43,13 +48,11 @@ footer {
 }
 
 #mentions:hover , #mail:hover {
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97);
   transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
 }
 
-@keyframes shake {
+@keyframes wiggle {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
@@ -66,3 +69,80 @@ footer {
     transform: translate3d(4px, 0, 0);
   }
 }
+
+/* les 4 menus */
+
+#menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu_1 {
+	background-color: #FFE4E1;
+
+}
+
+.menu_2 {
+	background-color: #FFF0F5;
+}
+
+.menu_3 {
+	background-color: #F5F5F5;
+}
+
+
+#menu_haut ,#menu_bas {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	height: 400px;
+}
+
+#menu_haut section ,#menu_bas section {
+	height: 100%;
+}
+
+.menu_objet {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 250px;
+	margin-left: 20px;
+	margin-right: 20px;
+	box-shadow: 0 0 10px grey;
+}
+
+.prochainement {
+	margin-bottom: 80px;
+}
+
+.section_menu li {
+	display: flex;
+	justify-content: space-between;
+}
+
+.conteneur_menu {
+	max-width: 800px;
+	padding: 60px;
+	margin: 0 auto;
+	background-color: red;
+	margin-bottom: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,9 +1,38 @@
+@font-face {
+	font-family: "sweetsdelight";
+	src: url("sweetsdelightdemo.otf");
+}
+@font-face {
+	font-family: "PoetsenOne_Regular";
+	src: url("PoetsenOne_Regular.ttf");
+}
+
+
+@font-face {
+	font-family: "Birds_of_Paradise";
+	src: url("Birds_of_Paradise.ttf");
+}
+
+@font-face {
+	font-family: "Je_n'aime_pas_le_lundi";
+	src: url("Je_n'aime_pas_le_lundi.ttf");
+}
+
+@font-face {
+	font-family: "CaviarDreams";
+	src: url("CaviarDreams.ttf");
+}
+
+
+
+
 /* header */
 
+
 header {
-	background-color: #66CDAA;
+	background-color: #579C87;
 	font-size: 2em;
-	color: #FFD700;
+	color: #FCCA46;
 	display: flex;
 	justify-content: center;
 	font-family: arial;
@@ -24,11 +53,11 @@ body {
 /* footer */
 
 footer {
-	background-color: #66CDAA;
+	background-color: #579C87;
 	font-size: 1.5em;
 	display: flex;
 	justify-content: space-between;
-	color: #FFD700;
+	color: #FCCA46;
 	align-items: center;
 	height: 80px;
 	width: 100%;
@@ -39,12 +68,12 @@ footer {
 
 #mentions {
 	margin-left: 10px;
-	color: #FFD700;
+	color: #FCCA46;
 }
 
 #mail {
 	margin-right: 10px;
-	color: #FFD700;
+	color: #FCCA46;
 }
 
 #mentions:hover , #mail:hover {
@@ -70,6 +99,22 @@ footer {
   }
 }
 
+.prochainement p {
+	display: flex;
+	justify-content: center;
+	background-color: #579C87;
+	color: #FCCA46;
+	border-radius: 10px;
+	width: 300px;
+	height: 50px;
+	font-size: 2em;
+}
+
+.prochainement {
+	display: flex;
+	justify-content: center;
+}
+
 /* les 4 menus */
 
 #menu {
@@ -78,16 +123,101 @@ footer {
 }
 
 .menu_1 {
-	background-color: #FFE4E1;
-
+	background-color: #FCDFDB;
+	color: #3C1218;
 }
+
+
+.menu_1 h2 {
+	font-size: 1em;
+	font-family: Segoe Script;
+}
+
+.menu_1 div {
+	font-family: Comic Sans MS;
+	text-transform: uppercase;
+}
+
+.menu_texte {
+	transform: scale(1);
+	transition-property: transform;
+	transition-duration: 1000ms;
+}
+
+.menu_texte:hover {
+	transform: scale(1.15);
+}
+
+
 
 .menu_2 {
-	background-color: #FFF0F5;
+	background-color: #FCF5FE;
 }
 
+.menu_2 h2 , .conteneur_menu_2 h1 {
+	background: linear-gradient(to right, #D8852E, #6E4CCC);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: "Birds_of_Paradise" , arial;
+}
+
+.menu_2 h2 {
+	font-size: 1.5em;
+}
+
+.menu_2 div {
+	color: #C77412;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+
+
 .menu_3 {
-	background-color: #F5F5F5;
+	background-color: #F9F9F9;
+}
+
+.menu_3 h2 , .conteneur_menu_3 h1 {
+	background: linear-gradient(to right, #0431DF, #0A88FB);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: "sweetsdelight" , arial;
+    font-size: 2em;
+}
+
+.menu_3 h2 {
+	font-size: 1.7em;
+}
+
+.menu_3 div {
+	color: #168DFA;
+	font-family: "PoetsenOne_Regular" , arial;
+	font-size: 1em;
+}
+
+
+.menu_4 {
+	background-color: #FDFFFD;
+
+}
+
+.menu_4 h2 , .conteneur_menu_4 h1 {
+	background: linear-gradient(to right, #3D9339, #BFFF7E);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: "Je_n'aime_pas_le_lundi" , arial;
+    font-size: 4em;
+}
+
+.menu_4 h2 {
+	font-size: 3.5em;
+}
+
+.menu_4 div {
+	color: #72BF56;
+	font-family: "PoetsenOne_Regular" , arial;
+	font-size: 1em;
 }
 
 
@@ -117,23 +247,125 @@ footer {
 	margin-bottom: 80px;
 }
 
+
+.section_menu {
+	padding-left: 0;
+}
+
 .section_menu li {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+h1 {
+	text-align: center;
 }
 
 .conteneur_menu {
 	max-width: 800px;
 	padding: 60px;
 	margin: 0 auto;
-	background-color: red;
 	margin-bottom: 150px;
+	text-align: center;
+}
+ /* page menu 1 */
+.conteneur_menu_1 {
+	background-color: #FCDFDB;
+}
+
+.conteneur_menu_1 h1 {
+	font-family: Segoe Script;
+}
+
+.conteneur_menu_1 h2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.conteneur_menu_1 section {
+	font-family: "CaviarDreams" , arial;
+}
+
+.conteneur_menu_1 h2 img {
+	max-height: 15px;
+}
+
+/*page menu 2*/
+.conteneur_menu_2 {
+	background-color: #FFF5FE;
+}
+
+.conteneur_menu_2 section {
+	font-family: "CaviarDreams" , arial;
+}
+
+.conteneur_menu_2 h2 {
+	margin-top: 75px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.conteneur_menu_2 li {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.conteneur_menu_2 h1 {
+	margin-bottom: 100px;
+}
+
+.menu_2_entrées {
+	color: #C67412;
+}
+
+.menu_2_plats {
+	color: #A56799;
+}
+
+.menu_2_desserts {
+	color: #6E4CCC;
 }
 
 
+/* page menu 3 */
 
+.conteneur_menu_3 {
+	background-color: #EDEFEF;
+}
 
+.conteneur_menu_3 h2 {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 75px;
+}
 
+.conteneur_menu_3 li {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.conteneur_menu_3 h1 {
+	margin-bottom: 100px;
+}
+
+/* page menu 4 */
+
+.conteneur_menu_4 h2 {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 75px;
+}
+
+.conteneur_menu_4 li {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.conteneur_menu_4 h1 {
+	margin-bottom: 100px;
+}
 
 
 
